@@ -1,0 +1,103 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+*::selection {
+	background: #F5D76E; /* WebKit/Blink Browsers */
+}
+*::-moz-selection {
+	background: #F5D76E; /* Gecko Browsers */
+}
+p {
+	margin: 10px;
+	display:block;
+	 flex: 1 0 220px;
+}
+body {
+	background: #eee;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	overflow:hidden;
+}
+.wrapper {
+	width:100%;
+	max-width:960px;
+	margin:10px auto;
+}
+.flex-container {
+	padding:20px 0px 20px 20px;
+	display:flex;
+	flex-wrap:wrap;
+	background-color:#fff;
+	height:auto;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.warning {
+	position:relative;
+	bottom:0;
+	right:0;
+	font-size:12px;
+	color:grey;
+}
+.wallet {
+	 flex-grow:1;
+}
+.wallet_future {
+	 flex-grow:2;
+}
+.wallet_future input {
+	 background-color:#F2F1EF;
+	 cursor:default;
+}
+.winloss #profit{
+	background-color:#C8F7C5;
+}
+.winloss #x{
+	background-color:#C8F7C5;
+}
+.winloss #percent{
+	background-color:#C8F7C5;
+}
+input {
+	width:90%;
+	height:10px;
+	padding:10px;
+	text-align:end;
+	border:1px solid #ccc;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.06), 0 1px 1px rgba(0,0,0,0.06);
+}
+input.disabled {
+	cursor:default;
+}
+.dollar {
+	  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='23px' width='85px'><text x='5' y='20' fill='black' font-size='16' font-weight='500' font-family='Montserrat, sans-serif'>$</text></svg>") no-repeat;
+}
+h3 {
+	font-weight:400;
+}
+span.title {
+	text-transform: uppercase;
+	padding:20px;
+}
+footer {
+	display:block;
+	padding:25px;
+	font-size:12px;
+	text-align:center;
+	color:grey;
+}
+@media screen and (max-width: 780px) {
+    body {
+		overflow:scroll;
+	}
+	span.title {
+		display:none;
+	}
+	.wrapper {
+	width:100%;
+	max-width:960px;
+	margin:-10px auto;
+}
+}
+ 
